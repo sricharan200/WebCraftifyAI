@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customized Tiles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    .custom-container{
+        position: relative;
+        width: 960px;
+        margin: 0 auto;
+    }
+    
+    .custom-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 10px;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    .custom-bg-img {
+      background-image: url(images_and_icons/grid_303.jpeg);
+      background-repeat: no-repeat;
+      object-fit: cover;
+      display: block;
+      background-size: cover;
+      background-position: 50% 10%;
+    }
+
+    .custom-grid-item {
+      border: none;
+      padding: 50px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 250px;
+    }
+
+    .custom-grid-item h2 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .custom-grid-item p {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .custom-grid-item.custom-color {
+      background-color: #f1c50e;
+    }
+
+    .custom-grid-item.custom-color2 {
+      background-color: #f2f2f2;
+    }
+
+    .custom-grid-item.custom-diffrow {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+    <div class="custom-container">
+      <h2>Customized Marketing Tiles</h2>
+
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+
+      <div class="custom-grid">
+        <div class="custom-grid-item custom-color custom-diffrow">
+          <h2>1</h2>
+          <p>Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read.</p>
+        </div>
+
+        <div class="custom-grid-item custom-diffrow">
+        </div>
+
+        <div class="custom-grid-item custom-color2">
+          <h2>2</h2>
+          <p>Quick can manor smart money hopes worth too. Comfort produce husband boy her had hearing. Law others theirs passed but wishes. You day real less till dear read.</p>
+        </div>
+
+        <div class="custom-grid-item custom-bg-img">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
